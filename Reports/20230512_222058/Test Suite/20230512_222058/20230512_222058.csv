@@ -1,6 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-Test Suite,,,,2023-05-12 22:21:02,2023-05-12 22:21:07,5.195s,ERROR
-,,,,,,,
-Test Cases/Get List Users,,,,2023-05-12 22:21:03,2023-05-12 22:21:07,4.681s,ERROR
-"sendRequest(findTestObject(""GET List Users"", [""BaseURL"":""https://reqres.in""]))",,,,2023-05-12 22:21:04,2023-05-12 22:21:07,3.778s,PASSED
-"verifyResponseStatusCode(response, 200)",,Validate res status code,,2023-05-12 22:21:07,2023-05-12 22:21:07,0.040s,ERROR

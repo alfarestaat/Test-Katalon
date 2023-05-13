@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET List Users</name>
+   <name>POST Register Successfull</name>
    <tag></tag>
-   <elementGuidId>d0442d35-92ba-4010-a139-644862420686</elementGuidId>
+   <elementGuidId>c1c708e2-b608-4fd3-863e-59b5f8038b8b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;pistol\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>540b1b02-2091-4422-ab0f-6f01a3fab2b5</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.3.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${baseURL}/api/users?page=1</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${baseURL}/api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,9 +39,16 @@
    <variables>
       <defaultValue>GlobalVariable.baseURL</defaultValue>
       <description></description>
-      <id>9bb52d41-acf2-4b91-a1ca-b0ba5f5cecdd</id>
+      <id>e019ecae-e3a3-42f9-ad24-ef8e2e29bf57</id>
       <masked>false</masked>
       <name>baseURL</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.email</defaultValue>
+      <description></description>
+      <id>3f27ff2e-eedb-46f7-9d42-c2db4813d462</id>
+      <masked>false</masked>
+      <name>email</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

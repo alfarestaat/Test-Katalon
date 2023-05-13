@@ -9,4 +9,19 @@
       <initValue>'https://reqres.in'</initValue>
       <name>baseURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'default'</initValue>
+      <name>userName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'default'</initValue>
+      <name>userJob</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'default@mail.com'</initValue>
+      <name>email</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
